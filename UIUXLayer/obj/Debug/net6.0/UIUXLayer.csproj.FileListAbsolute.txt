@@ -492,3 +492,7 @@ D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Hangfire.Core.dll
 D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Hangfire.Dashboard.Authorization.dll
 D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\System.ServiceModel.dll
 D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Owin.dll
+D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\2.Projects\_project\MiniProject\UIUXLayer\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

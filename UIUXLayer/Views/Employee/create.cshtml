@@ -10,36 +10,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
 </head>
 <body>
     <div class="container">
-        <div class="title">Registration</div>
+        <div class="title1">Registration</div>
         <div class="content">
             <form asp-action="create">
                 
                 <div class="gender-details">
-                    <input asp-for="title" type="radio" name="title1" value="Mr" id="dot-1">
-                    <input asp-for="title" type="radio" name="title1" value="Mrs" id="dot-2">
-                    <input asp-for="title" type="radio" name="title1" value="Ms" id="dot-3">
+                    <input asp-for="title" type="radio" name="title" value="Mr" id="dot-1">
+                    <input asp-for="title" type="radio" name="title" value="Mrs" id="dot-2">
+                    <input asp-for="title" type="radio" name="title" value="Ms" id="dot-3">
                     <span class="gender-title">Title</span>
                     <div class="category">
                         <label for="dot-1">
                             <span class="dot one"></span>
-                            <span class="title1">Mr</span>
+                            <span class="title">Mr</span>
                         </label>
                         <label for="dot-2">
                             <span class="dot two"></span>
-                            <span class="title1">Mrs</span>
+                            <span class="title">Mrs</span>
                         </label>
                         <label for="dot-3">
                             <span class="dot three"></span>
-                            <span class="title1">Ms</span>
+                            <span class="title">Ms</span>
                         </label>
                     </div>
                 </div>
                 <div class="user-details">
-
-                    
                     <div class="input-box">
                         <span class="details">First Name</span>
                         <input asp-for="firstName" type="text" placeholder="Enter your name" required>
@@ -87,6 +86,10 @@
                 </div>
                 <div class="user-details">
 
+                    <div class="input-box">
+                        <span class="details">Image</span>
+                        <input asp-for="imagePath" type="text" placeholder="Select Image" required>
+                    </div>
 
                     <div class="input-box">
                         <span class="details">Address</span>

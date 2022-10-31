@@ -7,6 +7,8 @@ using UIUXLayer.Models;
 using Microsoft.AspNetCore.Session;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using System.Text;
+using System.Reflection;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace UIUXLayer.Controllers
 {
@@ -73,7 +75,7 @@ namespace UIUXLayer.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> create(ModelClass emp)
+        public async Task<IActionResult> create(ModelClassDTO emp)
         {
             if (HttpContext.Session.GetString("JWToken") == null)
             {
@@ -91,6 +93,23 @@ namespace UIUXLayer.Controllers
                 var result = res.Content.ReadAsStringAsync().Result;
                 designationTemp = JsonConvert.DeserializeObject<List<DesignationClass>>(result);
                 ViewData["designationtemp"] = designationTemp;
+            }
+
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Files");
+
+            //create folder if not exist
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
+            //get file extension
+            FileInfo fileInfo = new FileInfo(emp.imagePath.FileName);
+            string fileName = emp.imagePath.FileName + fileInfo.Extension;
+
+            string fileNameWithPath = Path.Combine(path, fileName);
+
+            using (var stream = new FileStream(fileNameWithPath, FileMode.Create))
+            {
+                emp.imagePath.CopyTo(stream);
             }
 
             var postTask = client.PostAsJsonAsync("/api/Employee/create", emp);

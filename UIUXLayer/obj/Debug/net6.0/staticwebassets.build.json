@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZKPyWHlkSlIPlETdjw3Zk9hL438JwwfuoVASgweRV3c=",
+  "Hash": "nwaqCKttZWQgFZ5l/S9bpgRt4Kqajk6tm45BCrG1IjE=",
   "Source": "UIUXLayer",
   "BasePath": "_content/UIUXLayer",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Style.css"
+    },
+    {
+      "Identity": "D:\\2.Projects\\_project\\MiniProject\\UIUXLayer\\wwwroot\\css\\ViewStyle.css",
+      "SourceId": "UIUXLayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\2.Projects\\_project\\MiniProject\\UIUXLayer\\wwwroot\\",
+      "BasePath": "_content/UIUXLayer",
+      "RelativePath": "css/ViewStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ViewStyle.css"
     },
     {
       "Identity": "D:\\2.Projects\\_project\\MiniProject\\UIUXLayer\\wwwroot\\favicon.ico",
